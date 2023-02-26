@@ -1,0 +1,3 @@
+## Solution
+
+The function aims to produce a SHA3-512 hash of a sufficiently long message. Consequently, any message that falls short of the minimum length can be disregarded, and the function can terminate with the TRIVIAL_PARTITION_KEY. In the presence of a partitionKey field in a suitably long message, the desired outcome is to return the hexadecimal representation of the hash if the partitionKey satisfies the required length criteria; otherwise, we return the TRIVIAL_PARTITION_KEY. Finally, if the message meets the required length threshold, we compute the hash and return its hexadecimal representation.
